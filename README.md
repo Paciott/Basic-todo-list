@@ -2,7 +2,7 @@
 
 ## **Descrizione**
 
-Lo scopo del progetto è quello di creare una basilare Todo list. L'utente deve essere capace di inserire in una lista inizialmente vuota il testo che preferisce tramite l'utilizzo dell'input presente a schermo.
+Lo scopo del progetto è quello di creare una basilare Todo list. All'utente deve essere permesso di inserire in una lista inizialmente vuota il testo che preferisce tramite l'utilizzo dell'input presente a schermo.
 
 Qualora l'input dovesse essere vuoto, premendo il pulsante "Add" la lista non si aggiornerà.
 
