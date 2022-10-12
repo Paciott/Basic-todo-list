@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;700&display=swap");
+
+:root {
+  --white: rgb(255, 255, 255);
+  --grey: rgb(225, 229, 242);
+  --light-blue: rgb(191, 219, 247);
+  --aqua: rgb(31, 122, 140);
+  --dark-blue: rgb(2, 43, 58);
+  --very-dark-blue: rgb(2, 32, 43);
+}
+
+body {
+  background-color: var(--grey);
+  font-family: "Dosis", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin: 2rem;
+  background-color: var(--aqua);
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0.4rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+  color: var(--dark-blue);
+}
+
+#button {
+  font-family: inherit;
+  font-weight: 700;
+  border-style: none;
+  border-radius: 0.2rem;
+  width: 3rem;
+  padding: 0.3rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: 100ms ease-in-out;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: var(--light-blue);
+  color: var(--aqua);
+}
+
+#button:active {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 1rem;
+}
+
+#todo-list {
+  margin: 2rem 1rem;
+}
+
+li {
+  font-size: 1.3rem;
+  color: var(--very-dark-blue);
+}
+
+li.checked {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #todo-list {
+    align-self: flex-start;
+  }
+}
